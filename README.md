@@ -5,15 +5,15 @@
 
 	-here i have used mysql(phpmyadmin)            ///we can use phpmyadmin gui tool for creating the database its quite easy
 	Database Name : CommentApp
-			|
-			Table 1 : userdatabase (username,password,active,secret)
+		
+			1. Table 1 : userdatabase (username,password,active,secret)
 				 CREATE TABLE USERDATABASE( USERNAME VARCHAR(20),PASSWORD VARCHAR(20),ACTIVE BOOLEAN);
-			Table 2 : comments(username(fk) , comment(varchar(100));
+			2. Table 2 : comments(username(fk) , comment(varchar(100));
 				CREATE TABLE COMMENTS (USERNAME VARCHAR(20),COMMENT(VARCHAR(100),FOREIGN KEY (USERNAME) REFERENCES userdatabase(USERNAME));
 
 
 2. Download the zip file and extract:
-			Open Eclipse IDE :
+				0.Open Eclipse IDE :
 				1.import the zip file(CommentApp.zip) into the eclipse
 				2.set up the apache tomcat server(8.0) in eclipse
 				3.set up runtime library
@@ -21,8 +21,8 @@
 				5.now start the server
 
 3. go to web browser :
-			type :
-				1. http://localhost:9999/CommentApp/comment    (Home page if in session then comments will be shown else redirect to sign in page)
+			
+				1.home page:  http://localhost:9999/CommentApp/comment    (Home page if in session then comments will be shown else redirect to sign in page)
 
 				2.sign in : http://localhost:9999/CommentApp/html/signin.html
 				
