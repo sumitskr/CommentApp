@@ -13,8 +13,8 @@
 
 
 2. Download the zip file and extract:
-				0.Open Eclipse IDE :
-				1.import the zip file(CommentApp.zip) into the eclipse
+				0.Open Eclipse IDE 
+				1.import the zip file(CommentApp.zip) into the eclipse , project structure should be like the given picture 
 				2.set up the apache tomcat server(8.0) in eclipse
 				3.set up runtime library
 				4.set the apache tomcat http port to 9999 , bcz phpmyadmin use 8080 port.
